@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="grid">
+
+<div class="card">
+<h3>⚽ Gols</h3>
+<p>{{ gols }}</p>
+</div>
+
+<div class="card">
+<h3>📊 Jogos</h3>
+<p>{{ jogos }}</p>
+</div>
+
+<div class="card">
+<h3>🏆 Artilheiro</h3>
+<p>{{ art.JOGADOR }} ({{ art.GOLS }})</p>
+</div>
+
+</div>
+
+{% endblock %}

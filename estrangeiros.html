@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2>Artilheiros Estrangeiros</h2>
+
+<table>
+<tr><th>Jogador</th><th>Gols</th><th>País</th></tr>
+{% for r in gringos %}
+<tr>
+<td>{{ r.JOGADOR }}</td>
+<td>{{ r.GOLS }}</td>
+<td>{{ r.PAIS }}</td>
+</tr>
+{% endfor %}
+</table>
+
+<h2>Gols por País</h2>
+
+<table>
+<tr><th>País</th><th>Gols</th></tr>
+{% for r in paises %}
+<tr>
+<td>{{ r.PAIS }}</td>
+<td>{{ r.GOLS }}</td>
+</tr>
+{% endfor %}
+</table>
+
+{% endblock %}

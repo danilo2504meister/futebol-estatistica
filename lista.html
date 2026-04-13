@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2>{{ titulo }}</h2>
+
+<table>
+<tr><th>Jogador</th><th>Clube</th><th>Gols</th></tr>
+
+{% for r in dados %}
+<tr>
+<td>{{ r.JOGADOR }}</td>
+<td>{{ r.CLUBE }}</td>
+<td>{{ r.GOLS }}</td>
+</tr>
+{% endfor %}
+
+</table>
+
+{% endblock %}

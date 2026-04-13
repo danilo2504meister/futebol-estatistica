@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h2>{{ titulo }}</h2>
+
+<table>
+<tr>
+{% for key in dados[0].keys() %}
+<th>{{ key }}</th>
+{% endfor %}
+</tr>
+
+{% for row in dados %}
+<tr>
+{% for v in row.values() %}
+<td>{{ v }}</td>
+{% endfor %}
+</tr>
+{% endfor %}
+
+</table>
+
+{% endblock %}
